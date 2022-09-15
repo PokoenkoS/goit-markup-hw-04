@@ -357,21 +357,33 @@ margin-right: 0;
 display: block;
 text-align: center;
 }
-.team-list .item::after {
-display: block;
-content: "";
-height: 20px;
-width: 20px;
-margin-left: 32px;
-margin-bottom: 30px;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-background-image: url(../images/svg/social/insta-2.svg);
-background-image: url(../images/svg/social/twitter.svg);
 
+.team-social {
+    display: flex;
 }
 
+.team-social .item {
+    
+}
+
+/* Секція Постійні клієнти */
+
+.client-list {
+    display: flex;
+    justify-content: center;
+}
+.client-list .item {
+    margin-right: 30px;
+    border: 1px solid #AFB1B8;
+border-radius: 4px;
+width: 170px;
+height: 92px;
+
+
+}
+.client-list .item:last-child{
+    margin-right: 0;
+}
 
 /* Footer */
 .footer {
