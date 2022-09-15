@@ -279,32 +279,7 @@ margin-right: 30px;
 margin-right: 0;
 }
 
-.section-list .item::before {
-    display: block;
-    content: "";
-    height: 70px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--button-background-color);
-    border-radius: 4px;
-    margin-bottom: 30px;
-    
-}
-.attention::before {
-    background-image: url(../images/svg/antenna.svg);
-}
 
-.punctuality::before {
-    background-image: url(../images/svg/clock.svg);
-}
-
-.plan::before {
-    background-image: url(../images/svg/diagram.svg);
-}
-.technics::before {
-    background-image: url(../images/svg/astronaut.svg); 
-}
 /* Секція чим займаємось */
 
 .work-list {
