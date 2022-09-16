@@ -493,17 +493,37 @@ color: rgba(255, 255, 255, 0.6)
 .link-contact:focus {
 color:  var(--accent-color);
 }
+
 .footer-list {
     display: flex;
 }
-.footer-list .icon-item {
-    padding-top: 72px;
-    padding-bottom: 100px;
-}
+
 .footer-icons {
     display: flex;
 }
+.footer-tittle {
+display: flex;
+color: var(--text-color-white);
+padding-bottom: 20px;
+}
 
+.footer-list .item-social {
+    margin-right: 70px;
+}
+.footer-list .item:last-child {
+    margin-right: 0;
+}
+.footer-icons .icon {
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+}
+.footer-icons .icon :last-child {
+margin-right: 0;
+}
+.footer-icons .item :hover {
+    background: #2196F3;
+}
 /* стилі для portfolio.html */
 
 
