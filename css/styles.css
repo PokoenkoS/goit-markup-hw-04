@@ -104,7 +104,6 @@ color: var(--accent-color);
 /* Стилі контактів */
 
 .site-contact {
-display: flex;
 margin-left: auto;
 }
 
@@ -114,32 +113,19 @@ padding-top: 32px;
 padding-bottom: 32px;
 text-decoration: none;
 color: var(--secondary-text-color);
-
-
-}
-.site-contact .item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.site-contact .link {
-    display: flex;
-    align-items: center;
+align-items: center;
 
 }
-   .mail-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-     margin-right: 10px;
-     color: #757575;
-    align-items: center;
-    }
-     .site-contact .mail-icon:hover {
-        color: #2196F3;
-        }
 
+.mail-icon {
+margin-right: 10px;
+fill: #757575;
+
+}
+
+.site-contact .item .mail-icon:hover {
+fill: #2196F3;
+}
 
 .site-contact .item+.item {
 margin-left: 50px;
@@ -151,15 +137,16 @@ color: var(--accent-color);
 }
 
 .site-contact .tel {
-display: inline-flex;
+display:flex;
 padding-top: 32px;
 padding-bottom: 32px;
+text-decoration: none;
+color: var(--secondary-text-color);
+align-items: center;
 }
 
-
-
 .tel {
-   
+ 
 color: var(--secondary-text-color);
 text-decoration: none;
 }
@@ -170,6 +157,11 @@ color: var(--accent-color);
 }
 .phone-icon {
  margin-right: 10px;
+ fill: #757575;
+}
+
+.site-contact .item .phone-icon:hover {
+fill: #2196F3;
 }
 /* Стилі лого*/
 
@@ -355,7 +347,7 @@ font-size: 16px;
 line-height: 1.88;
 text-align: center;
 display: block;
-margin-bottom: 30px;
+margin-bottom: 16px;
 
 }
 
@@ -381,26 +373,28 @@ text-align: center;
 .team-social {
 display: flex;
 padding-bottom: 30px;
-margin-left: auto;
-margin-right: auto;
-padding-left: 32px;
-padding-right: 32px;
 justify-content: center;
 
 }
 .team-social .item {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+  margin: 0;
+    }
+.container-social {
+    width: 270px;
+    padding-left: 32px;
+    padding-right: 30px;
+}
+
+.icon {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+fill: #AFB1B8;
 }
-.insta-icon {
-    fill: #000000;
-}
-.team-social .item:hover {
+.team-social .item .icon:hover {
 fill: #FFFFFF;
 background: #2196F3;
 }
@@ -409,21 +403,38 @@ background: #2196F3;
 /* Секція Постійні клієнти */
 
 .client-list {
-    display: flex;
-    justify-content: center;
+display: flex;
+ 
 }
+
 .client-list .item {
-    margin-right: 30px;
-    border: 1px solid #AFB1B8;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 30px;
+border: 1px solid #AFB1B8;
 border-radius: 4px;
 width: 170px;
 height: 92px;
 
-
 }
+
 .client-list .item:last-child{
     margin-right: 0;
 }
+
+.mail-icon {
+  
+  fill : #AFB1B8;   
+  
+}
+.client-list .item :hover {
+    fill: #2196F3;
+    
+
+   
+}
+
 
 /* Footer */
 .footer {
@@ -481,6 +492,16 @@ color: rgba(255, 255, 255, 0.6)
 .link-contact:hover,
 .link-contact:focus {
 color:  var(--accent-color);
+}
+.footer-list {
+    display: flex;
+}
+.footer-list .icon-item {
+    padding-top: 72px;
+    padding-bottom: 100px;
+}
+.footer-icons {
+    display: flex;
 }
 
 /* стилі для portfolio.html */
