@@ -588,7 +588,7 @@ margin-right: 8px;
 
 }
 
-.btn-work .item: :last-child {
+.btn-work .item :last-child {
 margin-right: 0;
 }
 .btn-work .item :hover,
@@ -609,9 +609,14 @@ width: 370px;
 margin-right: 30px;
 margin-bottom: 30px;
 
+
+}
+.image {
+   display: block; 
+   text-decoration: none;
 }
 
-.portfolio-list .item :hover {
+.portfolio-list .image:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
      0px 4px 4px rgba(0, 0, 0, 0.06),
      1px 4px 6px rgba(0, 0, 0, 0.16);
