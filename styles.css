@@ -51,8 +51,8 @@ color: var(--accent-color);
 .site-contact .link {
 text-decoration: none;
 }
- .site-contact .link:hover,
- .site-contact .link:focus {
+ .site-contact .item :hover,
+ .site-contact .item:focus {
 color: var(--accent-color);
   }
   .tel {
