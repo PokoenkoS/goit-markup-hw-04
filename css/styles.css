@@ -120,6 +120,7 @@ align-items: center;
 .mail-icon {
 margin-right: 10px;
 fill: #757575;
+fill: currentColor;
 
 }
 
@@ -131,8 +132,8 @@ fill: #2196F3;
 margin-left: 50px;
 }
 
-.site-contact .link:hover,
-.site-contact .link:focus {
+.link-mail:hover,
+.link-mail:focus {
 color: var(--accent-color);
 }
 
@@ -149,6 +150,7 @@ align-items: center;
  
 color: var(--secondary-text-color);
 text-decoration: none;
+
 }
 
 .tel:hover,
@@ -158,6 +160,7 @@ color: var(--accent-color);
 .phone-icon {
  margin-right: 10px;
  fill: #757575;
+ fill: currentColor;
 }
 
 .site-contact .item .phone-icon:hover {
@@ -404,35 +407,36 @@ background: #2196F3;
 
 /* Секція Постійні клієнти */
 
+
 .client-list {
-display: flex;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.areal {
+    display: flex;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px; 
+    justify-content: center;
+ align-items: center; 
  
 }
 
-.client-list .item {
-display: flex;
-justify-content: center;
-align-items: center;
-margin-right: 30px;
-border: 1px solid #AFB1B8;
-border-radius: 4px;
-width: 170px;
-height: 92px;
-
-}
-
-.client-list .item:last-child{
-    margin-right: 0;
-}
-
-.mail-icon {
-  
+.client-icon {
+ 
   fill : #AFB1B8;   
 }
 
-.client-list .item :hover,
-.client-list .item :focus {
+.areal:hover> svg,
+.areal:focus> svg {
     fill: #2196F3;
+    
+}
+.areal:hover,
+.areal:focus {
+  border-color: #2196F3;
     
 }
 
